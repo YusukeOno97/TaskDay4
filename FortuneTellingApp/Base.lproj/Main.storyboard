@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,53 +15,54 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FortuneTellingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの運勢占います" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0E-S0-GxP">
-                                <rect key="frame" x="0.0" y="44" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="29.333333333333329"/>
                                 <color key="backgroundColor" red="0.97036405685932325" green="1" blue="0.34320482998495216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KGS-Dd-5Gf">
-                                <rect key="frame" x="0.0" y="96" width="414" height="35.5"/>
+                                <rect key="frame" x="0.0" y="59.333333333333336" width="414" height="29.333333333333336"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWc-HW-GdK">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="35.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="29.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggb-oc-Td8">
-                                        <rect key="frame" x="138" y="0.0" width="138" height="35.5"/>
+                                        <rect key="frame" x="138" y="0.0" width="138" height="29.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w8-kr-dL9">
-                                        <rect key="frame" x="276" y="0.0" width="138" height="35.5"/>
+                                        <rect key="frame" x="276" y="0.0" width="138" height="29.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GBN-Eo-9CH">
-                                <rect key="frame" x="0.0" y="132" width="453" height="305"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GBN-Eo-9CH">
+                                <rect key="frame" x="0.0" y="88.666666666666671" width="414" height="250.33333333333331"/>
                                 <date key="date" timeIntervalSinceReferenceDate="586947878.30911005">
                                     <!--2019-08-08 09:04:38 +0000-->
                                 </date>
+                                <locale key="locale" localeIdentifier="ja_JP"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="血液型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0a-5m-nvK">
-                                <rect key="frame" x="0.0" y="436.5" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="339" width="414" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZW7-J6-KIG">
-                                <rect key="frame" x="0.0" y="461.5" width="414" height="45.5"/>
+                                <rect key="frame" x="0.0" y="363" width="414" height="37.666666666666686"/>
                                 <segments>
                                     <segment title="A型"/>
                                     <segment title="B型"/>
@@ -69,29 +70,35 @@
                                     <segment title="AB型"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好きな色を指定してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6r-4t-qk6">
-                                <rect key="frame" x="0.0" y="506" width="414" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好きな数を指定してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6r-4t-qk6">
+                                <rect key="frame" x="0.0" y="399.66666666666669" width="414" height="44.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-kl-nHU">
-                                <rect key="frame" x="-2" y="560" width="418" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-kl-nHU">
+                                <rect key="frame" x="-2" y="444" width="418" height="31"/>
+                                <connections>
+                                    <action selector="FavNumBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="o82-Am-qfE"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfv-FI-c3b">
-                                <rect key="frame" x="0.0" y="596" width="414" height="27.5"/>
+                                <rect key="frame" x="0.0" y="478.66666666666669" width="414" height="27.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Wn-QR3">
-                                <rect key="frame" x="0.0" y="623.5" width="414" height="44.5"/>
+                                <rect key="frame" x="0.0" y="506.33333333333331" width="414" height="36.666666666666686"/>
                                 <color key="backgroundColor" red="0.89340764465989841" green="0.33582407125208125" blue="0.40067562725584621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.98329857480000005" green="0.98329857480000005" blue="0.98329857480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="占う"/>
+                                <connections>
+                                    <action selector="ExecutionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vm7-Kz-BjN"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ここにテキストが入る" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tse-Zh-KrR">
-                                <rect key="frame" x="0.0" y="668" width="414" height="194"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tse-Zh-KrR">
+                                <rect key="frame" x="0.0" y="543" width="414" height="193"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -139,6 +146,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="BloodType" destination="ZW7-J6-KIG" id="mEJ-jO-v8I"/>
+                        <outlet property="DateScroll" destination="GBN-Eo-9CH" id="Mzr-hm-Db1"/>
+                        <outlet property="FavNumLabel" destination="wfv-FI-c3b" id="K4e-Qv-PM7"/>
+                        <outlet property="ResultText" destination="tse-Zh-KrR" id="Yy9-Ff-QHM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
