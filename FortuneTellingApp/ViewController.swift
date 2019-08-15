@@ -42,17 +42,19 @@ class ViewController: UIViewController {
 
         // 神々の名前
         let gottype = ["全能の神「ゼウス」","神々の女王「ヘラ」","知恵の神「アテナ」","医療の神「アポロ」"]
+
+        switch num {
         // あまりが0だった場合
-        if num == 0 {
+        case 0:
             ResultText.text! = "あなたは\(gottype[0])に愛されています。"
-            // あまりが１だった場合[
-        } else if num == 1{
+        // あまりが１だった場合[
+        case 1:
             ResultText.text! = "あなたは\(gottype[1])に愛されています。"
-            // あまりが2だった場合
-        } else if num == 2 {
+        // あまりが2だった場合
+        case 2:
             ResultText.text! = "あなたは\(gottype[2])に愛されています。"
-            //  あまりが3だった場合
-        } else {
+        //  あまりが3だった場合
+        default:
             ResultText.text = "あなたは\(gottype[3])に愛されています。"
         }
 
@@ -62,38 +64,46 @@ class ViewController: UIViewController {
             ["光", "火", "水","木"]
         // 血液型の値を取ってきて定義
         let bloodtype = BloodType.selectedSegmentIndex
-        
+
+        switch bloodtype {
         // A型の場合
-        if bloodtype == 0 {
+        case 0:
             ResultText.text! += "属性は\(attributeType[0])です。"
-            // B型の場合
-        } else if bloodtype == 1 {
+        // B型の場合
+        case 1:
             ResultText.text! += "属性は\(attributeType[1])です。"
-            // O型の場合
-        } else if bloodtype == 2 {
+        // O型の場合
+        case 2:
             ResultText.text! += "属性は\(attributeType[2])です。"
-            // AB型の場合
-        } else {
+        // AB型の場合
+        default:
             ResultText.text! += "属性は\(attributeType[3])です。"
         }
-        
+
         // -------好きな番号を取ってきて占う箇所--------
         // 値の取得
         let favlabel = Int(String(FavNumLabel.text!))! % 4
         // オススメ
         let whatToDo =
             ["日光浴","キャンプファイアー","水泳","森林浴"]
-        
-        if favlabel == 0 {
+        switch favlabel{
+        // 日光浴
+        case 0:
             ResultText.text! += "\n思いっきり\(whatToDo[0])をすることが吉です。"
-        } else if favlabel == 1 {
+        // キャンプファイアー
+        case 1:
             ResultText.text! += "\n思いっきり\(whatToDo[1])をすることが吉です。"
-        } else if favlabel == 2 {
+        // 水泳
+        case 2:
             ResultText.text! += "\n思いっきり\(whatToDo[2])をすることが吉です。"
-        } else {
+        // 森林浴
+        default:
             ResultText.text! += "\n思いっきり\(whatToDo[3])をすることが吉です。"
         }
+
     }
 }
+
+
 
 
